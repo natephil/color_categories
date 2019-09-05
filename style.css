@@ -104,13 +104,19 @@ p {
 input[type=text] {
 	margin: 10px;
 	width: 80%;
+	height: 100%;
 	font-size: 10px;
-	background-color: hsl(210, 9%, 96%);
+	background-color: hsl(200, 25%, 94%);
 	border: none;
-	border-radius: 5px;
+	border-radius: 2px;
+	text-align: center;
+}
+::placeholder { /* color the placeholder text inside of the input form*/
+	color: hsl(200, 16%, 16%);
 }
 input[type=button] {
-	margin: 10px;
+	margin: 15px;
+	font-size: 15px;
 }
 /*make horizontal scrolling*/
 .main_container {
