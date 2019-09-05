@@ -111,15 +111,14 @@ input[type=button] {
 }
 /*make horizontal scrolling*/
 .main_container {
-	/* width: 30em; */
-	width: 98%;
-	/*position: relative; this cause container to be vertically scrollable  */
-    overflow-x: auto;
-	white-space: nowrap;
+	width: 90%;
+	/* position: relative; this cause container to be vertically scrollable  */
+	overflow-x: auto;
+	/*white-space: nowrap;*/
 	border: 1px solid;
-	margin: 10px;
 	border-radius: 5px;
-	text-align: center;	
+	text-align: center;
+	margin: 0 auto;
 }
 /* container stuff */
 .container {
