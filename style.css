@@ -1,0 +1,1525 @@
+/*boilerplate stuff*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2 {
+	margin: 50px;
+	text-align: center;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/*style logo*/
+.logo {
+  /*display: block;*/
+  /*margin: auto;*/
+  width: 50px;
+  position: relative;
+  left: 15px;
+  margin-top: 15px;
+}
+.chart_title {
+    line-height: .75em;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+.chart_subtitle {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.8em;
+    margin-bottom: 30px;
+	text-align: center;	
+}
+/*opening headline and paragraph styling*/
+/*opener div*/
+.opener {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 0px;	
+}
+/*opening headline style*/
+.tk-futura-pt {
+    font-family: "futura-pt",sans-serif;
+}
+.opener-headline {
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-size: 46px;
+    letter-spacing: 1px;
+     /*text-transform: none; */
+    margin-top: 15px; /*from 90*/
+}
+/*opening subtitle styling*/
+.opener-sub {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.6em;
+    text-transform: uppercase;
+    width: 417px;
+    margin: 0 auto;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #0091e6;
+}
+/*regular prose in opener styling*/
+.opener-prose-container {
+    width: 640px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.opener-prose {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.8em;
+    margin-bottom: 30px;
+}
+@media (max-width: 480px)
+.opener-prose-container {
+    margin-top: 22px;
+    width: 100%;
+}
+/*make it mobile friendly*/
+@media (max-width: 480px)
+.opener-headline {
+    font-size: 50px;
+    letter-spacing: 0px;
+    padding-top: 10px;
+    font-size: 32px;
+    margin-top: 0px;
+}
+/* input forms */
+input[type=text] {
+	margin: 10px;
+	width: 80%;
+	font-size: 10px;
+	background-color: hsl(210, 9%, 96%);
+	border: none;
+	border-radius: 5px;
+}
+input[type=button] {
+	margin: 10px;
+}
+/*make horizontal scrolling*/
+.main_container {
+	width: 90%;
+	/* position: relative; this cause container to be vertically scrollable  */
+    overflow-x: auto;
+	/*white-space: nowrap;*/
+	/*border: 1px solid;*/
+	border-radius: 5px;
+	/*text-align: center;*/
+    margin: 0 auto;
+	box-shadow: 0 2px 6px hsla(0, 0%, 0%, 0.3);
+}
+/* container stuff */
+.container {
+	width: 20%;
+	/*border: 1px solid;*/
+	float: left;
+	clear: right;
+	margin: 10px;
+	border-radius: 5px;
+	padding-top: 15px;
+	text-align: center;
+	box-shadow: 0 2px 6px hsla(0, 0%, 0%, 0.3);
+}
+/* sortable stuff */
+.sortable {
+	list-style-type: none;
+	margin: 0;
+	padding: 2px;
+	min-height: 30px;
+	border-radius: 5px;
+}
+.sortable li {
+	margin: 3px 3px 3px 3px;
+	padding: 0.4em;
+	padding-left: 1.5em;
+	/*padding-right: 1.5em;*/
+	height: 18px;
+	float: left;
+	clear: right;
+}
+.sortable li span {
+	position: relative;
+	margin-left: -1.3em;
+}
+/* horizontal scrolling stuff -- looks like float and clear might be better*/
+/* because using smaller chips*/
+/*.scrolling-wrapper {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	padding-bottom: 1.5em;
+  }
+  .card {
+	  display: inline-block;
+	}
+  .scrolling-wrapper-flexbox {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	padding-bottom: 1.5em;  
+  }
+  .card {
+	  flex: 0 0 auto;
+	  margin-right: 3px;
+	}
+  .card {
+	background-color: #610E2E;
+	border-radius: 5px;
+	border: 2px solid red;
+	align-content: center;
+	align-items: center;
+	width: 125px;
+	height: 80px;
+  }
+  .scrolling-wrapper, .scrolling-wrapper-flexbox {
+	height: 80px;
+	margin-bottom: 20px;
+	width: 100%;
+	-webkit-overflow-scrolling: touch;
+	 &::-webkit-scrollbar {
+	  display: none;
+	} 
+  }*/
+
+/* Style da button */
+.button {
+/*	display: inline-block;
+	position: relative;
+	left: 500px; */
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 15px;
+	/*box-shadow: 0 5px #999;*/
+	box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.3);
+  }  
+/*center the button*/
+#center_button {
+  /*height: 40px;*/
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+	background-color: white; 
+	color: black; 
+	border: 1.5px solid #557A95;
+} 
+.button:hover {
+	background-color: #557A95;
+	color: white;
+	transition-duration: 0.4s;
+	box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.5);
+}
+.button:active {
+	background-color: #557A95;
+	/*box-shadow: 0 1px #666;*/
+	box-shadow: 0 1px 5px hsla(0, 0%, 0%, 0.3);
+	transform: translateY(4px);
+	transition-duration: 0.1s;
+}
+
+ /*card color styles*/
+.card_1 {
+	background-color: #610E2E;
+	border-radius: 3px;
+}
+.card_2 {
+	background-color: #630E26;
+	border-radius: 3px;
+}
+.card_3 {
+	background-color: #63101D;
+	border-radius: 3px;
+}
+.card_4 {
+	background-color: #581F1B;
+	border-radius: 3px;
+}
+.card_5 {
+	background-color: #4D271D;
+	border-radius: 3px;
+}
+.card_6 {
+	background-color: #4B2917;
+	border-radius: 3px;
+}
+.card_7 {
+	background-color: #482B12;
+	border-radius: 3px;
+}
+.card_8 {
+	background-color: #3D2F21;
+	border-radius: 3px;
+}
+.card_9 {
+	background-color: #3A3020;
+	border-radius: 3px;
+}
+.card_10 {
+	background-color: #383120;
+	border-radius: 3px;
+}
+.card_11 {
+	background-color: #363221;
+	border-radius: 3px;
+}
+.card_12 {
+	background-color: #333222;
+	border-radius: 3px;
+}
+.card_13 {
+	background-color: #303324;
+	border-radius: 3px;
+}
+.card_14 {
+	background-color: #2E3326;
+	border-radius: 3px;
+}
+.card_15 {
+	background-color: #22371A;
+	border-radius: 3px;
+}
+.card_16 {
+	background-color: #1C3820;
+	border-radius: 3px;
+}
+.card_17 {
+	background-color: #153826;
+	border-radius: 3px;
+}
+.card_18 {
+	background-color: #113829;
+	border-radius: 3px;
+}
+.card_19 {
+	background-color: #0D382C;
+	border-radius: 3px;
+}
+.card_20 {
+	background-color: #08392F;
+	border-radius: 3px;
+}
+.card_21 {
+	background-color: #033833;
+	border-radius: 3px;
+}
+.card_22 {
+	background-color: #223534;
+	border-radius: 3px;
+}
+.card_23 {
+	background-color: #223536;
+	border-radius: 3px;
+}
+.card_24 {
+	background-color: #213538;
+	border-radius: 3px;
+}
+.card_25 {
+	background-color: #213439;
+	border-radius: 3px;
+}
+.card_26 {
+	background-color: #22343B;
+	border-radius: 3px;
+}
+.card_27 {
+	background-color: #063648;
+	border-radius: 3px;
+}
+.card_28 {
+	background-color: #10354A;
+	border-radius: 3px;
+}
+.card_29 {
+	background-color: #1A334B;
+	border-radius: 3px;
+}
+.card_30 {
+	background-color: #113259;
+	border-radius: 3px;
+}
+.card_31 {
+	background-color: #242870;
+	border-radius: 3px;
+}
+.card_32 {
+	background-color: #372660;
+	border-radius: 3px;
+}
+.card_33 {
+	background-color: #42225B;
+	border-radius: 3px;
+}
+.card_34 {
+	background-color: #491F57;
+	border-radius: 3px;
+}
+.card_35 {
+	background-color: #47244A;
+	border-radius: 3px;
+}
+.card_36 {
+	background-color: #4A2347;
+	border-radius: 3px;
+}
+.card_37 {
+	background-color: #571648;
+	border-radius: 3px;
+}
+.card_38 {
+	background-color: #571648;
+	border-radius: 3px;
+}
+.card_39 {
+	background-color: #5D123C;
+	border-radius: 3px;
+}
+.card_40 {
+	background-color: #5F1036;
+	border-radius: 3px;
+}
+.card_41 {
+	background-color: #8C1737;
+	border-radius: 3px;
+}
+.card_42 {
+	background-color: #8D192B;
+	border-radius: 3px;
+}
+.card_43 {
+	background-color: #8B1D1E;
+	border-radius: 3px;
+}
+.card_44 {
+	background-color: #892211;
+	border-radius: 3px;
+}
+.card_45 {
+	background-color: #7B320F;
+	border-radius: 3px;
+}
+.card_46 {
+	background-color: #6E3B19;
+	border-radius: 3px;
+}
+.card_47 {
+	background-color: #693E12;
+	border-radius: 3px;
+}
+.card_48 {
+	background-color: #644109;
+	border-radius: 3px;
+}
+.card_49 {
+	background-color: #5A4520;
+	border-radius: 3px;
+}
+.card_50 {
+	background-color: #55471E;
+	border-radius: 3px;
+}
+.card_51 {
+	background-color: #51491D;
+	border-radius: 3px;
+}
+.card_52 {
+	background-color: #4C4A1E;
+	border-radius: 3px;
+}
+.card_53 {
+	background-color: #464C20;
+	border-radius: 3px;
+}
+.card_54 {
+	background-color: #404D25;
+	border-radius: 3px;
+}
+.card_55 {
+	background-color: #2E511B;
+	border-radius: 3px;
+}
+.card_56 {
+	background-color: #205327;
+	border-radius: 3px;
+}
+.card_57 {
+	background-color: #085433;
+	border-radius: 3px;
+}
+.card_58 {
+	background-color: #24513E;
+	border-radius: 3px;
+}
+.card_59 {
+	background-color: #205142;
+	border-radius: 3px;
+}
+.card_60 {
+	background-color: #1B5145;
+	border-radius: 3px;
+}
+.card_61 {
+	background-color: #17514A;
+	border-radius: 3px;
+}
+.card_62 {
+	background-color: #12514F;
+	border-radius: 3px;
+}
+.card_63 {
+	background-color: #0E5153;
+	border-radius: 3px;
+}
+.card_64 {
+	background-color: #0E5058;
+	border-radius: 3px;
+}
+.card_65 {
+	background-color: #0F505C;
+	border-radius: 3px;
+}
+.card_66 {
+	background-color: #154F5F;
+	border-radius: 3px;
+}
+.card_67 {
+	background-color: #1E4E62;
+	border-radius: 3px;
+}
+.card_68 {
+	background-color: #264C64;
+	border-radius: 3px;
+}
+.card_69 {
+	background-color: #194C72;
+	border-radius: 3px;
+}
+.card_70 {
+	background-color: #16497F;
+	border-radius: 3px;
+}
+.card_71 {
+	background-color: #333F97;
+	border-radius: 3px;
+}
+.card_72 {
+	background-color: #4F3A87;
+	border-radius: 3px;
+}
+.card_73 {
+	background-color: #5E3581;
+	border-radius: 3px;
+}
+.card_74 {
+	background-color: #67307B;
+	border-radius: 3px;
+}
+.card_75 {
+	background-color: #6F2C75;
+	border-radius: 3px;
+}
+.card_76 {
+	background-color: #76276E;
+	border-radius: 3px;
+}
+.card_77 {
+	background-color: #7E2263;
+	border-radius: 3px;
+}
+.card_78 {
+	background-color: #831E58;
+	border-radius: 3px;
+}
+.card_79 {
+	background-color: #871B4E;
+	border-radius: 3px;
+}
+.card_80 {
+	background-color: #8B1742;
+	border-radius: 3px;
+}
+.card_81 {
+	background-color: #BE1547;
+	border-radius: 3px;
+}
+.card_82 {
+	background-color: #BE1A34;
+	border-radius: 3px;
+}
+.card_83 {
+	background-color: #BC2221;
+	border-radius: 3px;
+}
+.card_84 {
+	background-color: #AF3812;
+	border-radius: 3px;
+}
+.card_85 {
+	background-color: #A04710;
+	border-radius: 3px;
+}
+.card_86 {
+	background-color: #92501C;
+	border-radius: 3px;
+}
+.card_87 {
+	background-color: #8C540F;
+	border-radius: 3px;
+}
+.card_88 {
+	background-color: #815A21;
+	border-radius: 3px;
+}
+.card_89 {
+	background-color: #7A5D1B;
+	border-radius: 3px;
+}
+.card_90 {
+	background-color: #745F16;
+	border-radius: 3px;
+}
+.card_91 {
+	background-color: #6E6213;
+	border-radius: 3px;
+}
+.card_92 {
+	background-color: #676412;
+	border-radius: 3px;
+}
+.card_93 {
+	background-color: #5E6718;
+	border-radius: 3px;
+}
+.card_94 {
+	background-color: #546921;
+	border-radius: 3px;
+}
+.card_95 {
+	background-color: #3A6E15;
+	border-radius: 3px;
+}
+.card_96 {
+	background-color: #22702A;
+	border-radius: 3px;
+}
+.card_97 {
+	background-color: #256E48;
+	border-radius: 3px;
+}
+.card_98 {
+	background-color: #196F50;
+	border-radius: 3px;
+}
+.card_99 {
+	background-color: #086F56;
+	border-radius: 3px;
+}
+.card_100 {
+	background-color: #356B5D;
+	border-radius: 3px;
+}
+.card_101 {
+	background-color: #326B62;
+	border-radius: 3px;
+}
+.card_102 {
+	background-color: #2F6B67;
+	border-radius: 3px;
+}
+.card_103 {
+	background-color: #2E6A6B;
+	border-radius: 3px;
+}
+.card_104 {
+	background-color: #2E6A70;
+	border-radius: 3px;
+}
+.card_105 {
+	background-color: #316974;
+	border-radius: 3px;
+}
+.card_106 {
+	background-color: #356877;
+	border-radius: 3px;
+}
+.card_107 {
+	background-color: #196986;
+	border-radius: 3px;
+}
+.card_108 {
+	background-color: #2B6788;
+	border-radius: 3px;
+}
+.card_109 {
+	background-color: #1D6697;
+	border-radius: 3px;
+}
+.card_110 {
+	background-color: #2163A5;
+	border-radius: 3px;
+}
+.card_111 {
+	background-color: #485AB1;
+	border-radius: 3px;
+}
+.card_112 {
+	background-color: #6456A0;
+	border-radius: 3px;
+}
+.card_113 {
+	background-color: #745199;
+	border-radius: 3px;
+}
+.card_114 {
+	background-color: #7E4D94;
+	border-radius: 3px;
+}
+.card_115 {
+	background-color: #88498C;
+	border-radius: 3px;
+}
+.card_116 {
+	background-color: #904584;
+	border-radius: 3px;
+}
+.card_117 {
+	background-color: #98427A;
+	border-radius: 3px;
+}
+.card_118 {
+	background-color: #9E3F6D;
+	border-radius: 3px;
+}
+.card_119 {
+	background-color: #A23D62;
+	border-radius: 3px;
+}
+.card_120 {
+	background-color: #A53B58;
+	border-radius: 3px;
+}
+.card_121 {
+	background-color: #DC405D;
+	border-radius: 3px;
+}
+.card_122 {
+	background-color: #DD414B;
+	border-radius: 3px;
+}
+.card_123 {
+	background-color: #DC4436;
+	border-radius: 3px;
+}
+.card_124 {
+	background-color: #D74C13;
+	border-radius: 3px;
+}
+.card_125 {
+	background-color: #C65C10;
+	border-radius: 3px;
+}
+.card_126 {
+	background-color: #B8661A;
+	border-radius: 3px;
+}
+.card_127 {
+	background-color: #B06B02;
+	border-radius: 3px;
+}
+.card_128 {
+	background-color: #A3711C;
+	border-radius: 3px;
+}
+.card_129 {
+	background-color: #9C750F;
+	border-radius: 3px;
+}
+.card_130 {
+	background-color: #947902;
+	border-radius: 3px;
+}
+.card_131 {
+	background-color: #897C2A;
+	border-radius: 3px;
+}
+.card_132 {
+	background-color: #827E2B;
+	border-radius: 3px;
+}
+.card_133 {
+	background-color: #778203;
+	border-radius: 3px;
+}
+.card_134 {
+	background-color: #6A8519;
+	border-radius: 3px;
+}
+.card_135 {
+	background-color: #4A8B0D;
+	border-radius: 3px;
+}
+.card_136 {
+	background-color: #2A8E30;
+	border-radius: 3px;
+}
+.card_137 {
+	background-color: #238C57;
+	border-radius: 3px;
+}
+.card_138 {
+	background-color: #3B8968;
+	border-radius: 3px;
+}
+.card_139 {
+	background-color: #35896E;
+	border-radius: 3px;
+}
+.card_140 {
+	background-color: #308974;
+	border-radius: 3px;
+}
+.card_141 {
+	background-color: #2B897A;
+	border-radius: 3px;
+}
+.card_142 {
+	background-color: #248982;
+	border-radius: 3px;
+}
+.card_143 {
+	background-color: #1D8989;
+	border-radius: 3px;
+}
+.card_144 {
+	background-color: #1B8891;
+	border-radius: 3px;
+}
+.card_145 {
+	background-color: #218796;
+	border-radius: 3px;
+}
+.card_146 {
+	background-color: #2E859C;
+	border-radius: 3px;
+}
+.card_147 {
+	background-color: #3C839F;
+	border-radius: 3px;
+}
+.card_148 {
+	background-color: #2483AF;
+	border-radius: 3px;
+}
+.card_149 {
+	background-color: #1E81BF;
+	border-radius: 3px;
+}
+.card_150 {
+	background-color: #277DCE;
+	border-radius: 3px;
+}
+.card_151 {
+	background-color: #6776BE;
+	border-radius: 3px;
+}
+.card_152 {
+	background-color: #7C71BA;
+	border-radius: 3px;
+}
+.card_153 {
+	background-color: #8C6CB5;
+	border-radius: 3px;
+}
+.card_154 {
+	background-color: #9768AE;
+	border-radius: 3px;
+}
+.card_155 {
+	background-color: #A364A5;
+	border-radius: 3px;
+}
+.card_156 {
+	background-color: #B559A4;
+	border-radius: 3px;
+}
+.card_157 {
+	background-color: #BE5497;
+	border-radius: 3px;
+}
+.card_158 {
+	background-color: #C75086;
+	border-radius: 3px;
+}
+.card_159 {
+	background-color: #D6427B;
+	border-radius: 3px;
+}
+.card_160 {
+	background-color: #D9406C;
+	border-radius: 3px;
+}
+.card_161 {
+	background-color: #ED6B78;
+	border-radius: 3px;
+}
+.card_162 {
+	background-color: #EF6B6A;
+	border-radius: 3px;
+}
+.card_163 {
+	background-color: #EE6D59;
+	border-radius: 3px;
+}
+.card_164 {
+	background-color: #F66930;
+	border-radius: 3px;
+}
+.card_165 {
+	background-color: #EE710D;
+	border-radius: 3px;
+}
+.card_166 {
+	background-color: #DD7D17;
+	border-radius: 3px;
+}
+.card_167 {
+	background-color: #CE8526;
+	border-radius: 3px;
+}
+.card_168 {
+	background-color: #C68A13;
+	border-radius: 3px;
+}
+.card_169 {
+	background-color: #B88F2D;
+	border-radius: 3px;
+}
+.card_170 {
+	background-color: #AF9324;
+	border-radius: 3px;
+}
+.card_171 {
+	background-color: #A6961F;
+	border-radius: 3px;
+}
+.card_172 {
+	background-color: #9E991F;
+	border-radius: 3px;
+}
+.card_173 {
+	background-color: #929D26;
+	border-radius: 3px;
+}
+.card_174 {
+	background-color: #84A033;
+	border-radius: 3px;
+}
+.card_175 {
+	background-color: #66A62D;
+	border-radius: 3px;
+}
+.card_176 {
+	background-color: #2FAC36;
+	border-radius: 3px;
+}
+.card_177 {
+	background-color: #17AB64;
+	border-radius: 3px;
+}
+.card_178 {
+	background-color: #33A87B;
+	border-radius: 3px;
+}
+.card_179 {
+	background-color: #25A884;
+	border-radius: 3px;
+}
+.card_180 {
+	background-color: #10A98B;
+	border-radius: 3px;
+}
+.card_181 {
+	background-color: #46A493;
+	border-radius: 3px;
+}
+.card_182 {
+	background-color: #40A49C;
+	border-radius: 3px;
+}
+.card_183 {
+	background-color: #3EA4A3;
+	border-radius: 3px;
+}
+.card_184 {
+	background-color: #3DA3AA;
+	border-radius: 3px;
+}
+.card_185 {
+	background-color: #41A2B0;
+	border-radius: 3px;
+}
+.card_186 {
+	background-color: #4CA0B5;
+	border-radius: 3px;
+}
+.card_187 {
+	background-color: #2FA1C6;
+	border-radius: 3px;
+}
+.card_188 {
+	background-color: #06A0D7;
+	border-radius: 3px;
+}
+.card_189 {
+	background-color: #459CDA;
+	border-radius: 3px;
+}
+.card_190 {
+	background-color: #6198DA;
+	border-radius: 3px;
+}
+.card_191 {
+	background-color: #8592CB;
+	border-radius: 3px;
+}
+.card_192 {
+	background-color: #948EC8;
+	border-radius: 3px;
+}
+.card_193 {
+	background-color: #A18BC5;
+	border-radius: 3px;
+}
+.card_194 {
+	background-color: #AA88BF;
+	border-radius: 3px;
+}
+.card_195 {
+	background-color: #BE7FC0;
+	border-radius: 3px;
+}
+.card_196 {
+	background-color: #C77CB6;
+	border-radius: 3px;
+}
+.card_197 {
+	background-color: #CE79AA;
+	border-radius: 3px;
+}
+.card_198 {
+	background-color: #D6779C;
+	border-radius: 3px;
+}
+.card_199 {
+	background-color: #E76D92;
+	border-radius: 3px;
+}
+.card_200 {
+	background-color: #EB6B84;
+	border-radius: 3px;
+}
+.card_201 {
+	background-color: #F0979A;
+	border-radius: 3px;
+}
+.card_202 {
+	background-color: #F19792;
+	border-radius: 3px;
+}
+.card_203 {
+	background-color: #F29787;
+	border-radius: 3px;
+}
+.card_204 {
+	background-color: #FE936D;
+	border-radius: 3px;
+}
+.card_205 {
+	background-color: #FA965F;
+	border-radius: 3px;
+}
+.card_206 {
+	background-color: #FC9735;
+	border-radius: 3px;
+}
+.card_207 {
+	background-color: #F39D1F;
+	border-radius: 3px;
+}
+.card_208 {
+	background-color: #E3A434;
+	border-radius: 3px;
+}
+.card_209 {
+	background-color: #D9A925;
+	border-radius: 3px;
+}
+.card_210 {
+	background-color: #CEAD13;
+	border-radius: 3px;
+}
+.card_211 {
+	background-color: #C4B105;
+	border-radius: 3px;
+}
+.card_212 {
+	background-color: #B9B43E;
+	border-radius: 3px;
+}
+.card_213 {
+	background-color: #ACB911;
+	border-radius: 3px;
+}
+.card_214 {
+	background-color: #9CBC29;
+	border-radius: 3px;
+}
+.card_215 {
+	background-color: #81C148;
+	border-radius: 3px;
+}
+.card_216 {
+	background-color: #68C461;
+	border-radius: 3px;
+}
+.card_217 {
+	background-color: #44C77B;
+	border-radius: 3px;
+}
+.card_218 {
+	background-color: #54C394;
+	border-radius: 3px;
+}
+.card_219 {
+	background-color: #4BC49C;
+	border-radius: 3px;
+}
+.card_220 {
+	background-color: #42C4A4;
+	border-radius: 3px;
+}
+.card_221 {
+	background-color: #38C4AC;
+	border-radius: 3px;
+}
+.card_222 {
+	background-color: #2CC4B6;
+	border-radius: 3px;
+}
+.card_223 {
+	background-color: #60BFBB;
+	border-radius: 3px;
+}
+.card_224 {
+	background-color: #60BEC3;
+	border-radius: 3px;
+}
+.card_225 {
+	background-color: #62BDC9;
+	border-radius: 3px;
+}
+.card_226 {
+	background-color: #69BBCF;
+	border-radius: 3px;
+}
+.card_227 {
+	background-color: #72B9D3;
+	border-radius: 3px;
+}
+.card_228 {
+	background-color: #64B9E4;
+	border-radius: 3px;
+}
+.card_229 {
+	background-color: #79B5E7;
+	border-radius: 3px;
+}
+.card_230 {
+	background-color: #89B2E8;
+	border-radius: 3px;
+}
+.card_231 {
+	background-color: #A3AED8;
+	border-radius: 3px;
+}
+.card_232 {
+	background-color: #AEABD7;
+	border-radius: 3px;
+}
+.card_233 {
+	background-color: #B7A8D3;
+	border-radius: 3px;
+}
+.card_234 {
+	background-color: #BEA6CF;
+	border-radius: 3px;
+}
+.card_235 {
+	background-color: #D19FD1;
+	border-radius: 3px;
+}
+.card_236 {
+	background-color: #D99CC9;
+	border-radius: 3px;
+}
+.card_237 {
+	background-color: #EC93C4;
+	border-radius: 3px;
+}
+.card_238 {
+	background-color: #F391B6;
+	border-radius: 3px;
+}
+.card_239 {
+	background-color: #EB98AC;
+	border-radius: 3px;
+}
+.card_240 {
+	background-color: #ED97A2;
+	border-radius: 3px;
+}
+.card_241 {
+	background-color: #FDB9BA;
+	border-radius: 3px;
+}
+.card_242 {
+	background-color: #FEB9B3;
+	border-radius: 3px;
+}
+.card_243 {
+	background-color: #EEBFB6;
+	border-radius: 3px;
+}
+.card_244 {
+	background-color: #EFC0B0;
+	border-radius: 3px;
+}
+.card_245 {
+	background-color: #FEBB99;
+	border-radius: 3px;
+}
+.card_246 {
+	background-color: #FABE91;
+	border-radius: 3px;
+}
+.card_247 {
+	background-color: #F5C08A;
+	border-radius: 3px;
+}
+.card_248 {
+	background-color: #F8C169;
+	border-radius: 3px;
+}
+.card_249 {
+	background-color: #FBC211;
+	border-radius: 3px;
+}
+.card_250 {
+	background-color: #E9C938;
+	border-radius: 3px;
+}
+.card_251 {
+	background-color: #DFCD33;
+	border-radius: 3px;
+}
+.card_252 {
+	background-color: #D6D032;
+	border-radius: 3px;
+}
+.card_253 {
+	background-color: #C7D437;
+	border-radius: 3px;
+}
+.card_254 {
+	background-color: #B8D745;
+	border-radius: 3px;
+}
+.card_255 {
+	background-color: #9DDD5F;
+	border-radius: 3px;
+}
+.card_256 {
+	background-color: #93DC89;
+	border-radius: 3px;
+}
+.card_257 {
+	background-color: #7DDF9C;
+	border-radius: 3px;
+}
+.card_258 {
+	background-color: #88DBB2;
+	border-radius: 3px;
+}
+.card_259 {
+	background-color: #83DCB9;
+	border-radius: 3px;
+}
+.card_260 {
+	background-color: #7FDCC0;
+	border-radius: 3px;
+}
+.card_261 {
+	background-color: #7DDBC6;
+	border-radius: 3px;
+}
+.card_262 {
+	background-color: #98D6CC;
+	border-radius: 3px;
+}
+.card_263 {
+	background-color: #98D6D1;
+	border-radius: 3px;
+}
+.card_264 {
+	background-color: #98D5D6;
+	border-radius: 3px;
+}
+.card_265 {
+	background-color: #99D4DB;
+	border-radius: 3px;
+}
+.card_266 {
+	background-color: #9ED3DF;
+	border-radius: 3px;
+}
+.card_267 {
+	background-color: #A4D1E1;
+	border-radius: 3px;
+}
+.card_268 {
+	background-color: #ABCFE4;
+	border-radius: 3px;
+}
+.card_269 {
+	background-color: #A2CFF5;
+	border-radius: 3px;
+}
+.card_270 {
+	background-color: #ADCCF7;
+	border-radius: 3px;
+}
+.card_271 {
+	background-color: #C2C9E5;
+	border-radius: 3px;
+}
+.card_272 {
+	background-color: #C9C8E3;
+	border-radius: 3px;
+}
+.card_273 {
+	background-color: #CEC6E2;
+	border-radius: 3px;
+}
+.card_274 {
+	background-color: #D3C5DF;
+	border-radius: 3px;
+}
+.card_275 {
+	background-color: #E3BFE2;
+	border-radius: 3px;
+}
+.card_276 {
+	background-color: #EABDDD;
+	border-radius: 3px;
+}
+.card_277 {
+	background-color: #F1BBD5;
+	border-radius: 3px;
+}
+.card_278 {
+	background-color: #F6BACD;
+	border-radius: 3px;
+}
+.card_279 {
+	background-color: #F9B9C6;
+	border-radius: 3px;
+}
+.card_280 {
+	background-color: #FBB9C0;
+	border-radius: 3px;
+}
+.card_281 {
+	background-color: #F2E2E2;
+	border-radius: 3px;
+}
+.card_282 {
+	background-color: #F4E2DF;
+	border-radius: 3px;
+}
+.card_283 {
+	background-color: #F5E1DD;
+	border-radius: 3px;
+}
+.card_284 {
+	background-color: #F5E1DB;
+	border-radius: 3px;
+}
+.card_285 {
+	background-color: #F7E1D7;
+	border-radius: 3px;
+}
+.card_286 {
+	background-color: #F7E2D2;
+	border-radius: 3px;
+}
+.card_287 {
+	background-color: #F6E2CE;
+	border-radius: 3px;
+}
+.card_288 {
+	background-color: #F4E3CA;
+	border-radius: 3px;
+}
+.card_289 {
+	background-color: #FBE4AD;
+	border-radius: 3px;
+}
+.card_290 {
+	background-color: #FBE68E;
+	border-radius: 3px;
+}
+.card_291 {
+	background-color: #F4E88C;
+	border-radius: 3px;
+}
+.card_292 {
+	background-color: #EEEA8C;
+	border-radius: 3px;
+}
+.card_293 {
+	background-color: #E5EC8F;
+	border-radius: 3px;
+}
+.card_294 {
+	background-color: #E0ECAC;
+	border-radius: 3px;
+}
+.card_295 {
+	background-color: #DBEBCC;
+	border-radius: 3px;
+}
+.card_296 {
+	background-color: #D5ECD1;
+	border-radius: 3px;
+}
+.card_297 {
+	background-color: #D1EDD6;
+	border-radius: 3px;
+}
+.card_298 {
+	background-color: #CEEDDB;
+	border-radius: 3px;
+}
+.card_299 {
+	background-color: #CCEDDE;
+	border-radius: 3px;
+}
+.card_300 {
+	background-color: #CBEDE0;
+	border-radius: 3px;
+}
+.card_301 {
+	background-color: #CBEDE3;
+	border-radius: 3px;
+}
+.card_302 {
+	background-color: #CBEDE6;
+	border-radius: 3px;
+}
+.card_303 {
+	background-color: #CBECE9;
+	border-radius: 3px;
+}
+.card_304 {
+	background-color: #CDECEB;
+	border-radius: 3px;
+}
+.card_305 {
+	background-color: #CFEBED;
+	border-radius: 3px;
+}
+.card_306 {
+	background-color: #D2EAEF;
+	border-radius: 3px;
+}
+.card_307 {
+	background-color: #D6E9EF;
+	border-radius: 3px;
+}
+.card_308 {
+	background-color: #D8E8F0;
+	border-radius: 3px;
+}
+.card_309 {
+	background-color: #DDE7F0;
+	border-radius: 3px;
+}
+.card_310 {
+	background-color: #DFE6F0;
+	border-radius: 3px;
+}
+.card_311 {
+	background-color: #E2E5F0;
+	border-radius: 3px;
+}
+.card_312 {
+	background-color: #E5E4EF;
+	border-radius: 3px;
+}
+.card_313 {
+	background-color: #E7E4EF;
+	border-radius: 3px;
+}
+.card_314 {
+	background-color: #E8E4EE;
+	border-radius: 3px;
+}
+.card_315 {
+	background-color: #ECE3EB;
+	border-radius: 3px;
+}
+.card_316 {
+	background-color: #EDE3E9;
+	border-radius: 3px;
+}
+.card_317 {
+	background-color: #EFE2E8;
+	border-radius: 3px;
+}
+.card_318 {
+	background-color: #F0E2E6;
+	border-radius: 3px;
+}
+.card_319 {
+	background-color: #F1E2E4;
+	border-radius: 3px;
+}
+.card_320 {
+	background-color: #F2E2E3;
+	border-radius: 3px;
+}
