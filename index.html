@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>named categories</title>
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oswald'>
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet"/>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src='http://production-assets.codepen.io/assets/embed/ei.js'></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div>
+		<a href="https://nathancahn.com/" target="_blank"><img class="logo" src="portfolio_logo.svg" /></a>
+	</div>
+	<div class="opener">
+		<!-- <h1>Color Category Survey</h1> -->
+		<p class="opener-headline tk-futura-pt">Color Category Survey</p>
+		<p class="opener-sub tk-futura-pt">Examining sociological factors' effects on categorization of colors.</p>
+
+		<div class="opener-prose-container">
+			<p class="opener-prose tk-merriweather">Hey there! Welcome to the party! Today you're invited to participate in an interactive experiment inspired by the World Color Survey papers by Terry Regier and Paul Kay in 2005 & 2009. </p>
+			<p class="opener-prose tk-merriweather">This is a collection of Munsell Color Values converted into hex values. I collected the color chips from Terry Regier and Paul Kay's World Color Survey. I am interested in adding to the literature on how much weight sociological differences have in color categorization. Questions on language specifically have been seen in Regire and Kay 2005 and 2009. However, a deeper look into other social factors can't be ignored. These other demographics of interest are: gender identity, place of origin, and age.</p>
+			<p class="opener-prose tk-merriweather">My hypothesis is that gender identity, native languages, place of origin, and age will all have an effect on the number of color categories as well as color category thresholds. (i.e. I predict women are more likely to have more color categories than men, younger people will have more categories than older people, and finally the categories will reflect the subjects' native languages' natural color categories.)			
+		</div>
+	</div>
+	
+	<div id="mainDiv">
+		<br /><br />	
+		<hr width="50%">
+		<br /><br />
+		<!-- <div class="scrolling-wrapper"> -->
+		<p class="chart_title">All colors:</p>
+		<p class="chart_subtitle">Add as many categories as you'd like and start sorting!</p>
+		<div class="main_container" style="background-color:#fff;">
+			<ul class="sortable connectedSortable">
+				<li class="card" id="card_1"></li>
+				<li class="card" id="card_2"></li>
+				<li class="card" id="card_3"></li>
+				<li class="card" id="card_4"></li>
+				<li class="card" id="card_5"></li>
+				<li class="card" id="card_6"></li>
+				<li class="card" id="card_7"></li>
+				<li class="card" id="card_8"></li>
+				<li class="card" id="card_9"></li>
+				<li class="card" id="card_10"></li>
+				<li class="card" id="card_11"></li>
+				<li class="card" id="card_12"></li>
+				<li class="card" id="card_13"></li>
+				<li class="card" id="card_14"></li>
+				<li class="card" id="card_15"></li>
+				<li class="card" id="card_16"></li>
+				<li class="card" id="card_17"></li>
+				<li class="card" id="card_18"></li>
+				<li class="card" id="card_19"></li>
+				<li class="card" id="card_20"></li>
+				<li class="card" id="card_21"></li>
+				<li class="card" id="card_22"></li>
+				<li class="card" id="card_23"></li>
+				<li class="card" id="card_24"></li>
+				<li class="card" id="card_25"></li>
+				<li class="card" id="card_26"></li>
+				<li class="card" id="card_27"></li>
+				<li class="card" id="card_28"></li>
+				<li class="card" id="card_29"></li>
+				<li class="card" id="card_30"></li>
+				<li class="card" id="card_31"></li>
+				<li class="card" id="card_32"></li>
+				<li class="card" id="card_33"></li>
+				<li class="card" id="card_34"></li>
+				<li class="card" id="card_35"></li>
+				<li class="card" id="card_36"></li>
+				<li class="card" id="card_37"></li>
+				<li class="card" id="card_38"></li>
+				<li class="card" id="card_39"></li>
+				<li class="card" id="card_40"></li>
+				<li class="card" id="card_41"></li>
+				<li class="card" id="card_42"></li>
+				<li class="card" id="card_43"></li>
+				<li class="card" id="card_44"></li>
+				<li class="card" id="card_45"></li>
+				<li class="card" id="card_46"></li>
+				<li class="card" id="card_47"></li>
+				<li class="card" id="card_48"></li>
+				<li class="card" id="card_49"></li>
+				<li class="card" id="card_50"></li>
+				<li class="card" id="card_51"></li>
+				<li class="card" id="card_52"></li>
+				<li class="card" id="card_53"></li>
+				<li class="card" id="card_54"></li>
+				<li class="card" id="card_55"></li>
+				<li class="card" id="card_56"></li>
+				<li class="card" id="card_57"></li>
+				<li class="card" id="card_58"></li>
+				<li class="card" id="card_59"></li>
+				<li class="card" id="card_60"></li>
+				<li class="card" id="card_61"></li>
+				<li class="card" id="card_62"></li>
+				<li class="card" id="card_63"></li>
+				<li class="card" id="card_64"></li>
+				<li class="card" id="card_65"></li>
+				<li class="card" id="card_66"></li>
+				<li class="card" id="card_67"></li>
+				<li class="card" id="card_68"></li>
+				<li class="card" id="card_69"></li>
+				<li class="card" id="card_70"></li>
+				<li class="card" id="card_71"></li>
+				<li class="card" id="card_72"></li>
+				<li class="card" id="card_73"></li>
+				<li class="card" id="card_74"></li>
+				<li class="card" id="card_75"></li>
+				<li class="card" id="card_76"></li>
+				<li class="card" id="card_77"></li>
+				<li class="card" id="card_78"></li>
+				<li class="card" id="card_79"></li>
+				<li class="card" id="card_80"></li>
+				<li class="card" id="card_81"></li>
+				<li class="card" id="card_82"></li>
+				<li class="card" id="card_83"></li>
+				<li class="card" id="card_84"></li>
+				<li class="card" id="card_85"></li>
+				<li class="card" id="card_86"></li>
+				<li class="card" id="card_87"></li>
+				<li class="card" id="card_88"></li>
+				<li class="card" id="card_89"></li>
+				<li class="card" id="card_90"></li>
+				<li class="card" id="card_91"></li>
+				<li class="card" id="card_92"></li>
+				<li class="card" id="card_93"></li>
+				<li class="card" id="card_94"></li>
+				<li class="card" id="card_95"></li>
+				<li class="card" id="card_96"></li>
+				<li class="card" id="card_97"></li>
+				<li class="card" id="card_98"></li>
+				<li class="card" id="card_99"></li>
+				<li class="card" id="card_100"></li>
+				<li class="card" id="card_101"></li>
+				<li class="card" id="card_102"></li>
+				<li class="card" id="card_103"></li>
+				<li class="card" id="card_104"></li>
+				<li class="card" id="card_105"></li>
+				<li class="card" id="card_106"></li>
+				<li class="card" id="card_107"></li>
+				<li class="card" id="card_108"></li>
+				<li class="card" id="card_109"></li>
+				<li class="card" id="card_110"></li>
+				<li class="card" id="card_111"></li>
+				<li class="card" id="card_112"></li>
+				<li class="card" id="card_113"></li>
+				<li class="card" id="card_114"></li>
+				<li class="card" id="card_115"></li>
+				<li class="card" id="card_116"></li>
+				<li class="card" id="card_117"></li>
+				<li class="card" id="card_118"></li>
+				<li class="card" id="card_119"></li>
+				<li class="card" id="card_120"></li>
+				<li class="card" id="card_121"></li>
+				<li class="card" id="card_122"></li>
+				<li class="card" id="card_123"></li>
+				<li class="card" id="card_124"></li>
+				<li class="card" id="card_125"></li>
+				<li class="card" id="card_126"></li>
+				<li class="card" id="card_127"></li>
+				<li class="card" id="card_128"></li>
+				<li class="card" id="card_129"></li>
+				<li class="card" id="card_130"></li>
+				<li class="card" id="card_131"></li>
+				<li class="card" id="card_132"></li>
+				<li class="card" id="card_133"></li>
+				<li class="card" id="card_134"></li>
+				<li class="card" id="card_135"></li>
+				<li class="card" id="card_136"></li>
+				<li class="card" id="card_137"></li>
+				<li class="card" id="card_138"></li>
+				<li class="card" id="card_139"></li>
+				<li class="card" id="card_140"></li>
+				<li class="card" id="card_141"></li>
+				<li class="card" id="card_142"></li>
+				<li class="card" id="card_143"></li>
+				<li class="card" id="card_144"></li>
+				<li class="card" id="card_145"></li>
+				<li class="card" id="card_146"></li>
+				<li class="card" id="card_147"></li>
+				<li class="card" id="card_148"></li>
+				<li class="card" id="card_149"></li>
+				<li class="card" id="card_150"></li>
+				<li class="card" id="card_151"></li>
+				<li class="card" id="card_152"></li>
+				<li class="card" id="card_153"></li>
+				<li class="card" id="card_154"></li>
+				<li class="card" id="card_155"></li>
+				<li class="card" id="card_156"></li>
+				<li class="card" id="card_157"></li>
+				<li class="card" id="card_158"></li>
+				<li class="card" id="card_159"></li>
+				<li class="card" id="card_160"></li>
+				<li class="card" id="card_161"></li>
+				<li class="card" id="card_162"></li>
+				<li class="card" id="card_163"></li>
+				<li class="card" id="card_164"></li>
+				<li class="card" id="card_165"></li>
+				<li class="card" id="card_166"></li>
+				<li class="card" id="card_167"></li>
+				<li class="card" id="card_168"></li>
+				<li class="card" id="card_169"></li>
+				<li class="card" id="card_170"></li>
+				<li class="card" id="card_171"></li>
+				<li class="card" id="card_172"></li>
+				<li class="card" id="card_173"></li>
+				<li class="card" id="card_174"></li>
+				<li class="card" id="card_175"></li>
+				<li class="card" id="card_176"></li>
+				<li class="card" id="card_177"></li>
+				<li class="card" id="card_178"></li>
+				<li class="card" id="card_179"></li>
+				<li class="card" id="card_180"></li>
+				<li class="card" id="card_181"></li>
+				<li class="card" id="card_182"></li>
+				<li class="card" id="card_183"></li>
+				<li class="card" id="card_184"></li>
+				<li class="card" id="card_185"></li>
+				<li class="card" id="card_186"></li>
+				<li class="card" id="card_187"></li>
+				<li class="card" id="card_188"></li>
+				<li class="card" id="card_189"></li>
+				<li class="card" id="card_190"></li>
+				<li class="card" id="card_191"></li>
+				<li class="card" id="card_192"></li>
+				<li class="card" id="card_193"></li>
+				<li class="card" id="card_194"></li>
+				<li class="card" id="card_195"></li>
+				<li class="card" id="card_196"></li>
+				<li class="card" id="card_197"></li>
+				<li class="card" id="card_198"></li>
+				<li class="card" id="card_199"></li>
+				<li class="card" id="card_200"></li>
+				<li class="card" id="card_201"></li>
+				<li class="card" id="card_202"></li>
+				<li class="card" id="card_203"></li>
+				<li class="card" id="card_204"></li>
+				<li class="card" id="card_205"></li>
+				<li class="card" id="card_206"></li>
+				<li class="card" id="card_207"></li>
+				<li class="card" id="card_208"></li>
+				<li class="card" id="card_209"></li>
+				<li class="card" id="card_210"></li>
+				<li class="card" id="card_211"></li>
+				<li class="card" id="card_212"></li>
+				<li class="card" id="card_213"></li>
+				<li class="card" id="card_214"></li>
+				<li class="card" id="card_215"></li>
+				<li class="card" id="card_216"></li>
+				<li class="card" id="card_217"></li>
+				<li class="card" id="card_218"></li>
+				<li class="card" id="card_219"></li>
+				<li class="card" id="card_220"></li>
+				<li class="card" id="card_221"></li>
+				<li class="card" id="card_222"></li>
+				<li class="card" id="card_223"></li>
+				<li class="card" id="card_224"></li>
+				<li class="card" id="card_225"></li>
+				<li class="card" id="card_226"></li>
+				<li class="card" id="card_227"></li>
+				<li class="card" id="card_228"></li>
+				<li class="card" id="card_229"></li>
+				<li class="card" id="card_230"></li>
+				<li class="card" id="card_231"></li>
+				<li class="card" id="card_232"></li>
+				<li class="card" id="card_233"></li>
+				<li class="card" id="card_234"></li>
+				<li class="card" id="card_235"></li>
+				<li class="card" id="card_236"></li>
+				<li class="card" id="card_237"></li>
+				<li class="card" id="card_238"></li>
+				<li class="card" id="card_239"></li>
+				<li class="card" id="card_240"></li>
+				<li class="card" id="card_241"></li>
+				<li class="card" id="card_242"></li>
+				<li class="card" id="card_243"></li>
+				<li class="card" id="card_244"></li>
+				<li class="card" id="card_245"></li>
+				<li class="card" id="card_246"></li>
+				<li class="card" id="card_247"></li>
+				<li class="card" id="card_248"></li>
+				<li class="card" id="card_249"></li>
+				<li class="card" id="card_250"></li>
+				<li class="card" id="card_251"></li>
+				<li class="card" id="card_252"></li>
+				<li class="card" id="card_253"></li>
+				<li class="card" id="card_254"></li>
+				<li class="card" id="card_255"></li>
+				<li class="card" id="card_256"></li>
+				<li class="card" id="card_257"></li>
+				<li class="card" id="card_258"></li>
+				<li class="card" id="card_259"></li>
+				<li class="card" id="card_260"></li>
+				<li class="card" id="card_261"></li>
+				<li class="card" id="card_262"></li>
+				<li class="card" id="card_263"></li>
+				<li class="card" id="card_264"></li>
+				<li class="card" id="card_265"></li>
+				<li class="card" id="card_266"></li>
+				<li class="card" id="card_267"></li>
+				<li class="card" id="card_268"></li>
+				<li class="card" id="card_269"></li>
+				<li class="card" id="card_270"></li>
+				<li class="card" id="card_271"></li>
+				<li class="card" id="card_272"></li>
+				<li class="card" id="card_273"></li>
+				<li class="card" id="card_274"></li>
+				<li class="card" id="card_275"></li>
+				<li class="card" id="card_276"></li>
+				<li class="card" id="card_277"></li>
+				<li class="card" id="card_278"></li>
+				<li class="card" id="card_279"></li>
+				<li class="card" id="card_280"></li>
+				<li class="card" id="card_281"></li>
+				<li class="card" id="card_282"></li>
+				<li class="card" id="card_283"></li>
+				<li class="card" id="card_284"></li>
+				<li class="card" id="card_285"></li>
+				<li class="card" id="card_286"></li>
+				<li class="card" id="card_287"></li>
+				<li class="card" id="card_288"></li>
+				<li class="card" id="card_289"></li>
+				<li class="card" id="card_290"></li>
+				<li class="card" id="card_291"></li>
+				<li class="card" id="card_292"></li>
+				<li class="card" id="card_293"></li>
+				<li class="card" id="card_294"></li>
+				<li class="card" id="card_295"></li>
+				<li class="card" id="card_296"></li>
+				<li class="card" id="card_297"></li>
+				<li class="card" id="card_298"></li>
+				<li class="card" id="card_299"></li>
+				<li class="card" id="card_300"></li>
+				<li class="card" id="card_301"></li>
+				<li class="card" id="card_302"></li>
+				<li class="card" id="card_303"></li>
+				<li class="card" id="card_304"></li>
+				<li class="card" id="card_305"></li>
+				<li class="card" id="card_306"></li>
+				<li class="card" id="card_307"></li>
+				<li class="card" id="card_308"></li>
+				<li class="card" id="card_309"></li>
+				<li class="card" id="card_310"></li>
+				<li class="card" id="card_311"></li>
+				<li class="card" id="card_312"></li>
+				<li class="card" id="card_313"></li>
+				<li class="card" id="card_314"></li>
+				<li class="card" id="card_315"></li>
+				<li class="card" id="card_316"></li>
+				<li class="card" id="card_317"></li>
+				<li class="card" id="card_318"></li>
+				<li class="card" id="card_319"></li>
+				<li class="card" id="card_320"></li>   
+			</ul>
+		<!-- </div> -->
+		</div>
+
+		<div id="center_button">
+			<input type="button" class="button" id="btnAdd" value="Add New Category"/>
+		</div>
+		<div class="container category-container" style="background-color:#fff;">
+			<!-- <form action="/action_page.php"> -->
+			<form>
+				<input type="text" name="category" placeholder="new category, name me!">
+			</form>
+			<!-- <p>new category</p> -->
+			<ul class="sortable connectedSortable"></ul>
+		</div>
+	</div>
+</body>
+</html>
