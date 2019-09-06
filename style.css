@@ -1,7 +1,7 @@
 /*boilerplate stuff*/
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	padding-bottom: 250px;
+	padding-bottom: 150px;
 }
 h1,
 h2 {
@@ -15,10 +15,19 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
 /*style logo*/
 .logo {
-  /*display: block;*/
-  /*margin: auto;*/
+  /* display: block; */ /* these two lines center the logo */
+  /* margin: auto; */
   width: 50px;
   position: relative;
   left: 15px;
@@ -42,9 +51,10 @@ p {
 /*opening headline and paragraph styling*/
 /*opener div*/
 .opener {
-    width: 700px;
+	width: 700px;
     margin: 0 auto;
-    margin-top: 0px;	
+	margin-top: 0px;
+	/* background-color: #f8f8ff;	 */
 }
 /*opening headline style*/
 .tk-futura-pt {
@@ -79,7 +89,7 @@ p {
 .opener-prose-container {
     width: 640px;
     margin: 0 auto;
-    margin-top: 40px;
+	margin-top: 40px;
 }
 .opener-prose {
     font-size: 16px;
@@ -105,7 +115,7 @@ p {
 }
 /* input forms */
 input[type=text] {
-	margin: 10px;
+	margin: auto;
 	width: 80%;
 	height: 100%;
 	font-size: 10px;
@@ -116,6 +126,10 @@ input[type=text] {
 }
 ::placeholder { /* color the placeholder text inside of the input form*/
 	color: hsl(200, 16%, 16%);
+}
+/* styling for the input in the category container */
+#center {
+  padding: 10px;
 }
 input[type=button] {
 	margin: 15px;
@@ -129,14 +143,14 @@ input[type=button] {
 	/*white-space: nowrap;*/
 	/*border: 1px solid;*/
 	border-radius: 5px;
-	/*text-align: center;*/
+	/* text-align: center; */
     margin: 0 auto;
 	box-shadow: 0 2px 6px hsla(0, 0%, 0%, 0.3);
 }
 /* container stuff */
 .container {
 	width: 20%;
-	/*border: 1px solid;*/
+	border: None;
 	float: left;
 	clear: right;
 	margin: 10px;
@@ -264,7 +278,7 @@ input[type=button] {
 	transform: translate(1px, -1px);
 	transition-duration: 0.1s;
 }
- /*card color styles*/
+ /*card color ids*/
 #card_1 {
  	background-color: #610E2E;
  }
