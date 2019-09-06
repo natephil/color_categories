@@ -250,6 +250,7 @@ input[type=button] {
 	background-color: white; 
 	color: black; 
 	border: 1.5px solid #557A95;
+	opacity: 0.8;
 } 
 .button:hover {
 	background-color: #557A95;
