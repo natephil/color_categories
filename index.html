@@ -15,25 +15,24 @@
 </head>
 <body>
 	<div>
-		<a href="https://nathancahn.com/" target="_blank"><img class="logo" src="portfolio_logo.svg" /></a>
+		<a href="https://nathancahn.com/" target="_blank"><img class="logo" src="../portfolio_logo.svg" /></a>
 	</div>
 	<div class="opener">
-		<!-- <h1>Color Category Survey</h1> -->
 		<p class="opener-headline tk-futura-pt">Color Category Survey</p>
 		<p class="opener-sub tk-futura-pt">Examining sociological factors' effects on categorization of colors.</p>
 
 		<div class="opener-prose-container">
 			<p class="opener-prose tk-merriweather">Hey there! Welcome to the party! Today you're invited to participate in an interactive experiment inspired by the World Color Survey papers by Terry Regier and Paul Kay in 2005 & 2009. </p>
-			<p class="opener-prose tk-merriweather">This is a collection of Munsell Color Values converted into hex values. I collected the color chips from Terry Regier and Paul Kay's World Color Survey. I am interested in adding to the literature on how much weight sociological differences have in color categorization. Questions on language specifically have been seen in Regire and Kay 2005 and 2009. However, a deeper look into other social factors can't be ignored. These other demographics of interest are: gender identity, place of origin, and age.</p>
+			<p class="opener-prose tk-merriweather">This is a collection of Munsell Color Values converted into hex values. I collected the color chips from Terry Regier and Paul Kay's World Color Survey. I am interested in adding to the literature on how much weight sociological differences have in color categorization. Questions on language specifically have been seen in Regier and Kay 2005 and 2009. However, a deeper look into other social factors can't be ignored. These other demographics of interest are: gender identity, place of origin, and age.</p>
 			<p class="opener-prose tk-merriweather">My hypothesis is that gender identity, native languages, place of origin, and age will all have an effect on the number of color categories as well as color category thresholds. (i.e. I predict women are more likely to have more color categories than men, younger people will have more categories than older people, and finally the categories will reflect the subjects' native languages' natural color categories.)			
 		</div>
 	</div>
 	
+	<br /><br />	
+	<hr width="50%">
+	<br /><br />
+
 	<div id="mainDiv">
-		<br /><br />	
-		<hr width="50%">
-		<br /><br />
-		<!-- <div class="scrolling-wrapper"> -->
 		<p class="chart_title">All colors:</p>
 		<p class="chart_subtitle">Add as many categories as you'd like and start sorting!</p>
 		<div class="main_container" style="background-color:#fff;">
@@ -359,20 +358,19 @@
 				<li class="card" id="card_319"></li>
 				<li class="card" id="card_320"></li>   
 			</ul>
-		<!-- </div> -->
 		</div>
 
 		<div id="center_button">
 			<input type="button" class="button" id="btnAdd" value="Add New Category"/>
 		</div>
+
 		<div class="container category-container" style="background-color:#fff;">
-			<!-- <form action="/action_page.php"> -->
-			<form>
-				<input type="text" name="category" placeholder="new category, name me!">
+			<form id="form">
+				<input type="text" id="center" name="category" placeholder="new category, name me!">
 			</form>
-			<!-- <p>new category</p> -->
 			<ul class="sortable connectedSortable"></ul>
 		</div>
+
 	</div>
 </body>
 </html>
